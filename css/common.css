@@ -1,0 +1,225 @@
+@charset "UTF-8";
+html, body, dd, dl, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, ol, p, select, td, textarea, th, ul, li {
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul, ol, li {
+  list-style: none; }
+
+a, u {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+i, em {
+  font-style: normal; }
+
+b, strong {
+  font-weight: 100; }
+
+img {
+  display: block;
+  border: 0; }
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+.head {
+  background: #f4f4f4;
+  width: 100%; }
+  .head div {
+    width: 1190px;
+    margin: 0 auto;
+    height: 30px; }
+    .head div i {
+      color: orange;
+      font-size: 18px;
+      line-height: 30px; }
+    .head div span, .head div em {
+      line-height: 30px;
+      font-size: 12px;
+      color: #333333;
+      cursor: pointer; }
+    .head div a {
+      line-height: 30px;
+      font-size: 12px;
+      color: #333333;
+      margin-right: 12px;
+      cursor: pointer; }
+    .head div a i {
+      color: #66656a;
+      font-size: 15px;
+      line-height: 30px; }
+    .head div a:hover {
+      color: orange; }
+    .head div span:hover {
+      color: orange; }
+    .head div .headMenu {
+      width: 80px;
+      margin: 0 auto;
+      position: relative; }
+      .head div .headMenu a {
+        margin-right: 0;
+        margin-left: 10px; }
+      .head div .headMenu ul {
+        border: 1px solid #cfcfcf;
+        border-top: 0;
+        width: 78px;
+        position: absolute;
+        display: none;
+        float: none;
+        background-color: white; }
+      .head div .headMenu ul li a {
+        line-height: 20px; }
+    .head div .headMenu:hover {
+      border: 1px solid #cfcfcf;
+      width: 78px;
+      border-bottom: 0;
+      background-color: white; }
+    .head div .headMenu:hover ul {
+      display: block;
+      background-color: white; }
+    .head div .headMenu:hover ul li {
+      float: none;
+      background-color: white; }
+    .head div ul {
+      float: right; }
+    .head div ul li {
+      float: left; }
+
+.menu {
+  width: 100%;
+  height: 34px;
+  background-color: #90c221; }
+  .menu .menutop {
+    width: 1190px;
+    margin: 0 auto;
+    height: 34px; }
+  .menu .menuCommonLi {
+    float: left;
+    line-height: 34px; }
+  .menu .menuCommonLi:hover {
+    background-color: #76af00;
+    cursor: pointer; }
+  .menu .menuCommonLi a {
+    font-style: 600;
+    color: #FFFFFF;
+    padding: 0 34px; }
+  .menu .allProduct {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    line-height: 34px; }
+  .menu .allProduct .allSpan {
+    width: 200px;
+    color: white;
+    display: inline-block;
+    background-color: #669900;
+    text-align: center;
+    float: left; }
+  .menu .allProduct .allSpan i {
+    margin-left: 10px; }
+  .menu .productTypeList {
+    height: 370px;
+    background: white;
+    width: 200px;
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    float: left;
+    z-index: 1006;
+    display: none; }
+    .menu .productTypeList .productItem {
+      line-height: 51px;
+      border-bottom: 1px dashed #ccc;
+      cursor: pointer; }
+      .menu .productTypeList .productItem i {
+        margin-right: 18px; }
+      .menu .productTypeList .productItem span {
+        color: #666;
+        margin-left: 18px; }
+      .menu .productTypeList .productItem em {
+        float: right;
+        margin-right: 10px;
+        font-size: 8px;
+        color: #ccc; }
+    .menu .productTypeList .lastLink {
+      border-bottom: 0; }
+    .menu .productTypeList .borderSelect {
+      border: 1px solid #90c221;
+      border-right: 0; }
+    .menu .productTypeList .borderPrev {
+      border-bottom: 0; }
+    .menu .productTypeList .borderOther {
+      border-right: 1px solid #90c221; }
+    .menu .productTypeList .product {
+      position: absolute;
+      width: 760px;
+      height: 370px;
+      left: 200px;
+      top: 0;
+      z-index: 1000;
+      background-color: #FFFFFF;
+      border: 1px solid #90c221;
+      border-left: 0;
+      display: none; }
+      .menu .productTypeList .product .product_left {
+        float: left;
+        width: 470px;
+        padding-top: 20px;
+        padding-left: 40px; }
+        .menu .productTypeList .product .product_left .child_list_dt {
+          float: left;
+          width: 75;
+          text-align: right;
+          font-size: 12px;
+          line-height: 24px;
+          padding: 10px 0;
+          font-weight: 700; }
+        .menu .productTypeList .product .product_left .child_list_dd {
+          padding: 10px 0;
+          float: left;
+          width: 410px;
+          margin-left: 10px;
+          line-height: 24px;
+          border-bottom: 1px dashed #ccc; }
+          .menu .productTypeList .product .product_left .child_list_dd a {
+            line-height: 20px;
+            font-size: 12px;
+            padding-left: 3px;
+            padding-right: 3px;
+            color: #333;
+            border-left: 1px solid #ccc; }
+          .menu .productTypeList .product .product_left .child_list_dd span {
+            margin-left: 0; }
+          .menu .productTypeList .product .product_left .child_list_dd span a {
+            color: #f60; }
+        .menu .productTypeList .product .product_left .clear {
+          clear: both;
+          width: 0;
+          height: 0;
+          margin: 0;
+          padding: 0;
+          line-height: 0px; }
+      .menu .productTypeList .product .product_right {
+        float: left;
+        padding-left: 10px;
+        padding-top: 30px; }
+        .menu .productTypeList .product .product_right #lastImg {
+          margin-top: 35px; }

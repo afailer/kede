@@ -1,0 +1,136 @@
+@mixin common{
+    width: 1190px;
+    margin: 0 auto;
+}
+.regTop{
+    @include common;
+    height: 142px;
+    img{
+        margin-left: 50px;
+        float: left;
+        margin-top: 50px;
+    }
+     p{
+        background: #fdf7e9;
+        border: 1px solid #edae1b;
+        font-size: 12px;
+        width: 530px;
+        height: 50px;
+        margin-top: 50px;
+        float: right;
+        line-height: 25px;
+        padding: 0 12px;
+        margin-right: 90px;
+    }
+}
+.registBg{
+    width: 100%;
+    height: 480px;
+    background-color: #fd8aa7;
+    .registImg{
+//      @include common;
+//      height: 480px;
+//      overflow: hidden;
+//      background-size:cover;
+//      background: url(../img/banner_68d5fc.jpg) no-repeat;
+        background: url(../img/banner_68d5fc.jpg) no-repeat;
+        margin: 0 auto;
+        height:480px;
+        width:1190px;
+        overflow: hidden;
+        background-size:cover;
+        #regist{
+            width: 310px;
+            height: 400px;
+            background-color: #f3fcff;
+            float: right;
+            margin-top: 35px;
+            margin-right: 10px;
+            border-radius: 10px;
+            h3{
+                margin-top: 10px;
+                height: 60px;
+                line-height: 75px;
+                font-size: 22px;
+                color: orange;
+                margin-left: 10px;
+            }
+            li{
+                width: 284px;
+                height: 40px;
+                line-height: 40px;
+                margin: 0 auto;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background: white;
+                margin-top: 10px;
+                i{
+                    font-size: 25px;
+                    margin-left: 10px;
+                    margin-right: 4px;
+                    color:#888
+                }
+                em{
+                    display: inline-block;
+                    height: 16px;
+                    width: 1px;
+                    background-color: #ccc;
+                }
+                input{
+                    line-height: 38px;
+                    outline: none;
+                    border: 0;
+                    margin-left: 4px;
+                    vertical-align: middle;
+                    display: inline-block;
+                   
+                }
+                
+            }
+            .ma span{
+                background: #888;
+                font-size: 14px;
+                padding: 6px 8px;
+                text-align: center;
+                color: white;
+                margin-left: 5px;
+                font-family: "bradley hand itc";
+                font-weight: 700;
+                border-radius: 2px;
+            }
+            .ma input{
+                margin-left: 20px;
+            }
+            .mobile span{
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 4px;
+                    height: 100%;
+                    background: blue;
+            }
+            .mobileCheck span{
+                    background-color: #999;
+                    padding: 5px 8px;
+                    color: white;
+                    font-size: 12px;
+                    border-radius: 2px;
+                }
+            .mobileCheck input{
+                width: 150px;
+            }
+            .password input{
+                width: 210px;
+            }
+            .registBtn input{
+                width: 100%;
+                height: 100%;
+                color: white;
+                background-color: #ff6600;
+                text-align: center;
+                letter-spacing: 4px;
+                border-radius: 3px;
+            }
+         }
+    }
+   
+}

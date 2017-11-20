@@ -1,0 +1,221 @@
+@mixin common{
+    width: 1190px;
+    margin: 0 auto;
+}
+.onTop{
+    
+}
+.float-left {
+    float: left;
+}
+.wide_f_main{
+    @include common;
+    height: 750px;
+    margin-top: 30px;
+    overflow: hidden;
+    .title_con{
+        width: 1190px;
+        height: 33px;
+        background: purple;
+        .f_1{
+                border-bottom: 3px solid #72b7fc;
+                color: #72b7fc;
+            }
+        .f_2{
+            border-bottom: 3px solid #fd81b3;
+            color: #fd81b3;
+        }
+        .f_3{
+            border-bottom: 3px solid #00cccc;
+            color: #00cccc;
+        }
+        .wideTitle{
+            width: 1190px;
+            line-height: 30px;
+            
+            height: 30px;
+            background: white;
+            z-index: 2;
+            
+            .wide_title{
+                
+                width: 210px;
+                font-size: 19px;
+            }
+            a{
+                color: #666
+            }
+            .wide_delicacy{
+                font-size: 12px;
+                width: 490px;
+                color: #666666;
+                overflow: hidden;
+            }
+            .wide_hot{
+                font-size: 12px;
+                width: 440px;
+                color: #666666;
+            }
+        }
+    }
+    .wide_f_left{
+        float: left;
+        width: 210px;
+        height: 720px;
+        .wide_f_ban{
+            width: 210px;
+            height: 360px;
+            overflow: hidden;
+            .wide_f_ban_ul{
+                width: 1000px;
+                height: 360px;
+                li{
+                    width: 210px;
+                    height: 360px;
+                    float: left;
+                    img{
+                        width: 210px;
+                        height: 360px;
+                    }
+                }
+            }
+        }
+        .wide_f_hot{
+            width: 210px;
+            height: 360px;
+            border: 1px solid #E9E9E9;
+            background-color: #F7F7F7;
+            h2{
+                height: 50px;
+                line-height: 50px;
+                color: #333;
+                font-size: 16px;
+                text-align: center;
+            }
+            .wide_f_hot_ul{
+                width: 200px;
+                height: 308px;
+                overflow: hidden;
+                li{
+                    width: 200px;
+                    height: 88px;
+                    position: relative;
+                    margin-left: 12px;
+                    border-top: 1px solid #ccc;
+                    padding-bottom: 18px;
+                    a{
+                        font-size: 12px;
+                        .wide_f_hot_img{
+                            width: 68px;
+                            height: 68px;
+                            position: absolute;
+                            left: 0px;
+                            top: 18px;
+                        }
+                        .wide_f_hot_name{
+                            width: 108px;
+                            position: absolute;
+                            right: 0px;
+                            top: 18px;  
+                            line-height: 16px;
+                            height: 32px;  
+                            padding: 0 9px 0 3px;
+                            color:#999;
+                        }
+                        .wide_f_hot_price{
+                            position: absolute;
+                            top: 50px;
+                            color: #FF6600;
+                            line-height: 16px;
+                            right: 0;
+                            width: 108px;
+                             padding: 0 9px 0 3px;
+                            span{
+                                margin-left: 10px;
+                                color: #999;
+                            }
+                        }
+                        .wide_f_hot_level{
+                            right: 0;
+                            top: 70px;
+                            width: 108px;
+                            height: 15px;
+                            position: absolute;
+                            padding: 0 12px 0 0px;
+                            .icon-wujiaoxing{
+                                color: orange;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wide_f_right{
+        width: 980px;
+        height: 719px;
+        border: 1px solid #e9e9e9;
+        border-width: 0px 0px 1px 0px;
+        float: left;
+        .wide_f_item{
+            width: 224px;
+            height: 228px;
+            float: left;
+            padding:10px 10px 0px 10px;
+            font-size: 12px;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            img{
+                width: 200px;
+                margin: 0 auto;
+            }
+            .wide_f_item_price{
+                font-size: 16px;
+                line-height: 24px;
+                height: 24px;
+                margin-top: 10px;
+                color: #FF6600;
+            }
+            .wide_f_item_name{
+                color: #666;
+                line-height: 16px;
+                height: 16px;
+            }
+            .wide_f_item_sales{
+                color: #FF6600;
+                height: 16px;
+                line-height: 16px;
+            }
+        }
+        .wide_f_item_bigger{
+            width: 490px;
+            height: 238px;
+            ul{
+                width: 490px;
+                height: 238px;
+                overflow: hidden;
+                li{
+                    float: left;
+                }
+            }
+        }
+    }
+}
+.hj_top{
+    @include common
+    height: 160px;
+    margin-top: 10px;
+    ul{
+        @include common
+        li{
+            width: 290px;
+            height: 160px;
+            float: left;
+            margin-right: 7px;
+            img{
+                width: 290px;
+                height: 160px;
+            }
+        }
+    }
+}

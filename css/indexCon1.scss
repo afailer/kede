@@ -1,0 +1,24 @@
+.con1{
+    .hotSearch{
+         width: 198px;
+        ul{
+            
+            height: 140px;
+            background-color: grey;
+            background-color: grey;
+        }
+        ul li{
+            list-style: none;
+            float:left;
+            width: 56px;
+            font-size: 12px;
+            height: 28px;
+            line-height: 28px;
+            margin: 5px;
+            text-align: center;
+            background-color: #ccc;
+            border: 1px solid #90c221;
+            margin: 4px 8px 0 0;
+        }
+    }
+}
