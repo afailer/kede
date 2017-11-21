@@ -110,7 +110,9 @@ img {
   .menu .menutop {
     width: 1190px;
     margin: 0 auto;
-    height: 34px; }
+    height: 34px;
+    z-index: 005;
+    background-color: #90c221; }
   .menu .menuCommonLi {
     float: left;
     line-height: 34px; }

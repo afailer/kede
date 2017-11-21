@@ -62,18 +62,19 @@ $(".productTypeList>li").mouseenter(function(){
 	$(this).removeClass("borderSelect").siblings().removeClass("borderOther");
 	$(this).prev().removeClass("borderPrev");
 })
-var wides=document.getElementsByClassName("wide_f_main");
-var wideTitles=document.getElementsByClassName("wideTitle");
+var wides=$(".wide_f_main");
+var wideTitles=$(".wideTitle");
 
 window.onscroll=function(){
 	for(var v=0;v<wides.length;v++){
 		console.log($(document).scrollTop()+" "+wides[v].offsetTop)
-		if($(document).scrollTop()-wides[v].offsetTop>0&&($(document).scrollTop()-wides[v].offsetTop)<(wides[v].offsetHeight-wideTitles[v].offsetHeight)){	  
-			  wideTitles[v].style.left=wides[v].offsetLeft;
-			  wideTitles[v].style.position="fixed";
-			  wideTitles[v].style.top=0;
+		if($(document).scrollTop()-$(".wide_f_main")[v].offsetTop>0&&($(document).scrollTop()-$(".wide_f_main")[v].offsetTop)<($(".wide_f_main")[v].offsetHeight-$(".wideTitle")[v].offsetHeight)){	  
+			  $(".wideTitle").eq(v).css("left",wides[v].offsetLeft).css("position","fixed").css("top",0);//[v].style.left=wides[v].offsetLeft;
+			  //wideTitles[v].style.position="fixed";
+			  //wideTitles[v].style.top=0;
 		}else{
-			wideTitles[v].style.position="";
+			//wideTitles[v].style.position="";
+			$(".wideTitle").eq(v).css("position","");
 		}
 	}
 }
