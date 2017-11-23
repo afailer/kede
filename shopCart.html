@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<link rel="stylesheet" href="css/shopCart.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div id="head" style="width: 100%;"></div>
+		<div id="top" style="width: 100%;">
+		</div>
+		<div id="menu" style="width: 100%;"></div>
+		<div id="plist">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+<script type="text/javascript" src="js/ajax.js" ></script>
+<script>
+	
+	$("#head").load("public.html #head")
+	$("#top").load("public.html #top");
+	$("#menu").load("public.html #menu");
+	
+	
+	var pStr=getCookie("product");
+	var plist=JSON.parse(pStr);
+	var str="";
+	for(var v=0;v<plist.length;v++){
+		str+=`<div class="product">
+				<ul>
+					<li><input type="checkbox" class="check"></li>
+					<li><img src="${plist[v].img}"/></li>
+					<li><span class="p_name">${plist[v].name}</span></li>
+					<li><span class="p_price">${plist[v].price}</span></li>
+					<li><span class="p_extra">${plist[v].sales}</span></li>
+				</ul>
+			</div>`
+	}
+	$("#plist").html(str);
+	
+</script>

@@ -67,6 +67,9 @@ img{display:block;border:0;}
         span:hover{
             color: orange;
         }
+        #exit{
+            display: none;
+        }
         .headMenu{
             width: 80px;
             margin: 0 auto;
@@ -139,7 +142,7 @@ img{display:block;border:0;}
         position: relative;
         float: left;
         cursor: pointer;
-        line-height: 34px;
+        line-height: 33px;
     }
      .allProduct .allSpan{
        // padding: 0 30px 0px 40px;
@@ -199,7 +202,7 @@ img{display:block;border:0;}
                  .product{
                      position: absolute;
                      width: 760px;
-                     height: 370px;
+                     height: 369px;
                      left: 200px;
                      top:0;
                      z-index: 1000;

@@ -1,0 +1,96 @@
+
+{	
+	"step":1,
+	"itemList":[
+		{
+			"itemId":"001",
+			"type":"01",
+			"img":"img/2f_1.jpg",
+			"price":"￥98.00",
+			"name":"博士伦清朗月抛6片装",		
+			"sales":"赠LG润肤膏"
+		},
+		{
+			"itemId":"002",
+			"type":"01",
+			"img":"img/2f_1.jpg",
+			"price":"￥75.00",
+			"name":"伦敦度假游",		
+			"sales":"赠玫瑰精油"
+		},
+		{
+			"itemId":"003",
+			"type":"01",
+			"img":"img/2f_1.jpg",
+			"price":"￥149.00 ",
+			"name":"苏格兰打卤面",		
+			"sales":"赠滴眼液"
+		},
+		{
+			"itemId":"004",
+			"type":"01",
+			"img":"img/2f_1.jpg",
+			"price":"￥149.00 ",
+			"name":"强生镜片升级版",		
+			"sales":"赠雅姿乳液"
+		},
+		{
+			"itemId":"005",
+			"type":"01",
+			"img":"img/2f_1.jpg",
+			"price":"￥149.00 ",
+			"name":"库博眼镜90度",		
+			"sales":"赠沐浴盐"
+		},
+		{
+			"itemId":"006",
+			"type":"01",
+			"img":"img/2f_1.jpg",
+			"price":"￥173.00 ",
+			"name":"库博Biofinity佰视明月抛3片装",		
+			"sales":"赠LG润肤膏"
+		},
+		{
+			"itemId":"020",
+			"type":"02",
+			"img1":"img/1f_ban1.jpg",
+			"img2":"img/1f_ban2.jpg",
+			"price":"￥139.00 ",
+			"name":"休斯顿看比赛",		
+			"sales":"赠润肤乳"
+		},
+		{
+			"itemId":"007",
+			"type":"01",
+			"img":"img/1f_7.jpg",
+			"price":"￥139.00 ",
+			"name":"休斯顿看比赛",		
+			"sales":"赠润肤乳"
+		},
+		{
+			"itemId":"008",
+			"type":"01",
+			"img":"img/1f_6.jpg",
+			"price":"￥209.00 ",
+			"name":"北京烤鸭",		
+			"sales":"赠沐浴露"
+		},
+		{
+			"itemId":"009",
+			"type":"01",
+			"img":"img/1f_7.jpg",
+			"price":"￥139.00 ",
+			"name":"休斯顿看比赛",		
+			"sales":"赠润肤乳"
+		},
+		{
+			"itemId":"011",
+			"type":"01",
+			"img":"img/1f_6.jpg",
+			"price":"￥209.00 ",
+			"name":"北京烤鸭",		
+			"sales":"赠沐浴露"
+		}
+	]
+		
+}

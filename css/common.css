@@ -70,6 +70,8 @@ img {
       color: orange; }
     .head div span:hover {
       color: orange; }
+    .head div #exit {
+      display: none; }
     .head div .headMenu {
       width: 80px;
       margin: 0 auto;
@@ -127,7 +129,7 @@ img {
     position: relative;
     float: left;
     cursor: pointer;
-    line-height: 34px; }
+    line-height: 33px; }
   .menu .allProduct .allSpan {
     width: 200px;
     color: white;
@@ -173,7 +175,7 @@ img {
     .menu .productTypeList .product {
       position: absolute;
       width: 760px;
-      height: 370px;
+      height: 369px;
       left: 200px;
       top: 0;
       z-index: 1000;

@@ -15,7 +15,7 @@ define(["jquery"],function(){
 			}
 		},
 		init:function(){
-			$(function(){	
+				
 			$(".rightMenu li").mouseenter(function(){
 				$(this).css("background","red");
 				$(this).find(".s").stop().animate({"left":-61},600)
@@ -23,7 +23,7 @@ define(["jquery"],function(){
 				$(this).css("background","green")
 				$(this).find(".s").stop().animate({"left":0},600)
 			})
-			})
+			
 			$("#linkMid ol li").mouseenter(function(){
 				var index=$(this).index();
 				$(this).css("background","#90c221").siblings().css("background","#333");

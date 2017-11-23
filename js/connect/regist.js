@@ -31,4 +31,13 @@ requirejs(["jquery","ck"],function($,ck){
 			$(".notice span").eq(0).html("");
 		}
 	})
+	$(".registBtn").eq(0).click(function(){
+		if(mobileFlag&&pwdFlag){
+			var template=`{tel:${$(".mobile input").eq(0).val()},pwd:${$(".password input").eq(0).val()}}`;
+			ck.setCookie("user",template);
+			location.href="index.html"
+		}else{
+			alert(mobileFlag+"请输入手机号密码"+pwdFlag);
+		}
+	})
 })

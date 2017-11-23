@@ -69,7 +69,8 @@
           border: 0;
           margin-left: 4px;
           vertical-align: middle;
-          display: inline-block; }
+          display: inline-block;
+          margin-top: -8px; }
       .registBg .registImg #regist .ma span {
         background: #888;
         font-size: 14px;
@@ -81,7 +82,8 @@
         font-weight: 700;
         border-radius: 2px; }
       .registBg .registImg #regist .ma input {
-        margin-left: 20px; }
+        margin-left: 20px;
+        margin-top: -3px; }
       .registBg .registImg #regist .mobile span {
         display: inline-block;
         vertical-align: middle;
@@ -105,4 +107,6 @@
         background-color: #ff6600;
         text-align: center;
         letter-spacing: 4px;
-        border-radius: 3px; }
+        border-radius: 3px;
+        margin-left: 0px;
+        margin-top: 0px; }

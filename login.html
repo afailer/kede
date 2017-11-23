@@ -3,28 +3,101 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<style>
+			.btn{ 
+    width: 100px;  
+    height: 35px;  
+    border-radius: 5px;  
+    font-size: 16px;  
+    color: #F97B39;
+
+　position: absolute;
+    top: 130px;
+    left: 160px;
+    opacity: 0.2;
+    cursor: pointer; /*鼠标小手*/
+} 
+
+.btn:hover, .btn:focus{  /*focus 取得焦点状态*/
+    background-color: #8AA7F9;
+    opacity: 0.5;
+    color: #FFFFFF;
+}  
+.modalBox{  
+    display: none;  
+    width: 100%;  
+    height: 100%;  
+    position: fixed;  
+    left: 0;  
+    top: 0;  
+    z-index: 1000;  
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modalBox-matter{  
+    display: flex;  　　  /*/*弹性布局*/
+    flex-flow: column nowrap; 
+    justify-content: space-between;  　　　　/*两端对齐*/
+    width: 50%;  
+    height: 80%;
+    margin: 30px auto 100px;  
+    border-radius:10px;
+    -webkit-animation: zoom 0.6s;  
+    animation: zoom 0.6s;  
+    resize: both;  
+    overflow: auto;  
+}
+
+@keyframes zoom{  
+    from {transform: scale(0)}  
+    to {transform: scale(1)}  
+}
+
+.modalBox-header{
+
+　　margin-left: 617px; 
+}
+
+.mtclose{
+   color: #602E2A;  
+   font-size: 3em;  
+   font-weight: bold;  
+   transition: all 0.3s;
+   /*z-index: 1010; */
+ }  
+ .mtclose:hover, .mtclose:focus{  
+    color: #602E2A;  
+    cursor: pointer;  
+}
+
+.modalBox-body{  
+    padding: 10px;  
+    font-size: 16px;  
+}
+		</style>
 	</head>
 	<body>
+		<li><div class='z-01'><a href='/comment/visine9-0-1.html' target='_blank' title='Visine优能弹力赋活水晶眼膜2对装'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/5531e9cc-3b9e-441d-b757-ae6aec8943f8-68-68.jpg' alt='Visine优能弹力赋活水晶眼膜2对装'></a></div><div class='z-02'><a href='/comment/visine9-0-1.html' target='_blank' title='Visine优能弹力赋活水晶眼膜2对装'>Visine优能弹力赋活水晶眼膜2对装</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>100</span>条评论</div><div class='z-05'><a href = '/comment/visine9-0-1.html' target='_blank'><span>冯鑫维 [钻石会员]</span><samp>可得多年来不知道浪费了多少积分，自从知道了可得积分可以抵用钱的时候，才知道了评论的重要，后来就复制了这段话，走到哪，复制到哪</samp></a></div></li><li><div class='z-01'><a href='/comment/kdtyj255-0-1.html' target='_blank' title='KD防UV太阳眼镜KD201032S C2 金框粉色片'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/fa34ed53-5407-4813-98b0-81e6c630b420-68-68.jpg' alt='KD防UV太阳眼镜KD201032S C2 金框粉色片'></a></div><div class='z-02'><a href='/comment/kdtyj255-0-1.html' target='_blank' title='KD防UV太阳眼镜KD201032S C2 金框粉色片'>KD防UV太阳眼镜KD201032S C2 金框粉色片</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>1</span>条评论</div><div class='z-05'><a href = '/comment/kdtyj255-0-1.html' target='_blank'><span>banana2*** [钻石会员]</span><samp>可得几年来不知道浪费了多少积分，自从知道了可得积分可以抵用钱的时候，才知道了评论的重要，后来就复制了这段话，走到哪，复制到哪，既能赚钱，又能么么哒 </samp></a></div></li><li><div class='z-01'><a href='/comment/hankj1173-0-1.html' target='_blank' title='HAN COLLECTION 纯钛光学眼镜架-经典哑黑(HN42040 C1/L)(FM166094 配镜组合)'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/4f1f70d7-fdd4-4446-8605-210ecc509017-68-68.jpg' alt='HAN COLLECTION 纯钛光学眼镜架-经典哑黑(HN42040 C1/L)(FM166094 配镜组合)'></a></div><div class='z-02'><a href='/comment/hankj1173-0-1.html' target='_blank' title='HAN COLLECTION 纯钛光学眼镜架-经典哑黑(HN42040 C1/L)(FM166094 配镜组合)'>HAN COLLECTION 纯钛光学眼镜架-经典哑黑(HN42040 C1/L)(FM166094 配镜组合)</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>6</span>条评论</div><div class='z-05'><a href = '/comment/hankj1173-0-1.html' target='_blank'><span>85A8BB9*** [钻石会员]</span><samp>主要是便宜。眼睛盒比眼镜好看</samp></a></div></li><li><div class='z-01'><a href='/comment/baoshi1-0-1.html' target='_blank' title='娥佩兰薏仁化妆水  500ml'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/6123d636-e219-4bdb-8209-4d4f52e733ca-68-68.jpg' alt='娥佩兰薏仁化妆水  500ml'></a></div><div class='z-02'><a href='/comment/baoshi1-0-1.html' target='_blank' title='娥佩兰薏仁化妆水  500ml'>娥佩兰薏仁化妆水  500ml</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>25</span>条评论</div><div class='z-05'><a href = '/comment/baoshi1-0-1.html' target='_blank'><span>1386538*** [钻石会员]</span><samp>不错
+</samp></a></div></li><li><div class='z-01'><a href='/comment/hankj446-0-1.html' target='_blank' title='HAN纯钛光学眼镜架-低调枪灰（J81636-C3）(FM163354 配镜组合)'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/05b48d7d-6c0b-4de2-b367-730a8ccf4312-68-68.jpg' alt='HAN纯钛光学眼镜架-低调枪灰（J81636-C3）(FM163354 配镜组合)'></a></div><div class='z-02'><a href='/comment/hankj446-0-1.html' target='_blank' title='HAN纯钛光学眼镜架-低调枪灰（J81636-C3）(FM163354 配镜组合)'>HAN纯钛光学眼镜架-低调枪灰（J81636-C3）(FM163354 配镜组合)</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>2</span>条评论</div><div class='z-05'><a href = '/comment/hankj446-0-1.html' target='_blank'><span>1806523*** [白银会员]</span><samp>眼镜到了 纯钛的镜架果然很轻 镜片也很不错 比实体店良心</samp></a></div></li><li><div class='z-01'><a href='/comment/kedejp6-0-1.html' target='_blank' title='KD BLUELESS 1.60全天候防蓝光非球面树脂镜片(1.597)(FM16B054 配镜组合)'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/5fd5d51c-431c-45c4-a14c-91d633211e0e-68-68.jpg' alt='KD BLUELESS 1.60全天候防蓝光非球面树脂镜片(1.597)(FM16B054 配镜组合)'></a></div><div class='z-02'><a href='/comment/kedejp6-0-1.html' target='_blank' title='KD BLUELESS 1.60全天候防蓝光非球面树脂镜片(1.597)(FM16B054 配镜组合)'>KD BLUELESS 1.60全天候防蓝光非球面树脂镜片(1.597)(FM16B054 配镜组合)</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>69</span>条评论</div><div class='z-05'><a href = '/comment/kedejp6-0-1.html' target='_blank'><span>1377079*** [黄金会员]</span><samp>还是不错的 就是鼻托略宽 略掉</samp></a></div></li><li><div class='z-01'><a href='/comment/hant512-0-1.html' target='_blank' title='HAN白铜不锈钢防紫外线太阳镜-黑框灰色片(HD59116-S01)'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/bbd1a9e0-ab69-4135-b389-5facbbab53a3-68-68.jpg' alt='HAN白铜不锈钢防紫外线太阳镜-黑框灰色片(HD59116-S01)'></a></div><div class='z-02'><a href='/comment/hant512-0-1.html' target='_blank' title='HAN白铜不锈钢防紫外线太阳镜-黑框灰色片(HD59116-S01)'>HAN白铜不锈钢防紫外线太阳镜-黑框灰色片(HD59116-S01)</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>1</span>条评论</div><div class='z-05'><a href = '/comment/hant512-0-1.html' target='_blank'><span>banana2*** [钻石会员]</span><samp>可得几年来不知道浪费了多少积分，自从知道了可得积分可以抵用钱的时候，才知道了评论的重要，后来就复制了这段话，走到哪，复制到哪，既能赚钱，又能么么哒</samp></a></div></li><li><div class='z-01'><a href='/comment/hca16-0-1.html' target='_blank' title='海昌HAPPY GO月抛彩色隐形眼镜3片装-流光棕'><img onerror="javascript:this.src='http://pic.keede.com/ui/humanity/site/error.jpg';" src='http://pic.keede.com/main/2a1506a6-7bdf-4f65-9e95-d4098c40047d-68-68.jpg' alt='海昌HAPPY GO月抛彩色隐形眼镜3片装-流光棕'></a></div><div class='z-02'><a href='/comment/hca16-0-1.html' target='_blank' title='海昌HAPPY GO月抛彩色隐形眼镜3片装-流光棕'>海昌HAPPY GO月抛彩色隐形眼镜3片装-流光棕</a></div><div class='z-03'><i class='star5'></i></div><div class='z-04'><span>12</span>条评论</div><div class='z-05'><a href = '/comment/hca16-0-1.html' target='_blank'><span>爱吃的小可 [钻石会员]</span><samp>老客户了东西一直很好
+</samp></a></div></li>
+
+　　</div>
+　</div>
+</div>
+
+
 	</body>
+	<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+	<!-- Initialize Foundation JS -->
 	<script>
-			var reg=/^1[3|5|7|8]\d{9}$/;
-			//console.log(reg.test("18601302047"));
-			
-			var regnum=/\d+/;
-			var regletter=/[a-zA-Z]+/
-			console.log(regletter.test("2343"));
-//		//fromcharcode charcodeat
-//		var str="azAZ19";
-//		for(var v=0;v<str.length;v++){
-//			console.log(str.charCodeAt(v));
-//		}
-//		var str="";
-//		for(var v=0;v<4;v++){
-//			str+=String.fromCharCode(getRand(65,90));
-//		}
-//		function getRand(min,max){
-//			return Math.round( Math.random()*(max-min) + min );
-//		}
-//		console.log(str)
+	   var btn = document.getElementById('showMax');  
+	   var mtclose = document.getElementsByClassName('mtclose')[0];
+	   var modalBox = document.getElementById('modalBox');  
+	   btn.addEventListener('click', function(){  
+	       modalBox.style.display = "block";  
+	   });  
+	   mtclose.addEventListener('click', function(){  
+	       modalBox.style.display = "none";  
+	   });
 	</script>
 </html>

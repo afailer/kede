@@ -76,6 +76,10 @@ html body {
     width: 1190px;
     margin: 0 auto;
     height: 370px; }
+    #link #linkCon .linkLeft {
+      width: 200px;
+      height: 370px;
+      float: left; }
     #link #linkCon #linkMid {
       width: 760px;
       height: 370px;
@@ -155,6 +159,22 @@ html body {
     border-radius: 3px 0px 0px 3px; }
   .rightMenu em {
     font-size: 13px; }
+
+.backTop {
+  position: fixed;
+  right: 200px;
+  bottom: 300px;
+  display: block;
+  height: 80px;
+  width: 80px;
+  border: 1px solid #CCCCCC;
+  font-size: 50px;
+  text-align: center;
+  display: none; }
+
+.backTop:hover {
+  color: white;
+  background: green; }
 
 .float-left {
   float: left; }
@@ -288,7 +308,9 @@ html body {
       padding: 10px 10px 0px 10px;
       font-size: 12px;
       border-right: 1px solid #ccc;
-      border-bottom: 1px solid #ccc; }
+      border-bottom: 1px solid #ccc;
+      position: relative;
+      overflow: hidden; }
       .wide_f_main .wide_f_right .wide_f_item img {
         width: 200px;
         margin: 0 auto; }
@@ -306,13 +328,27 @@ html body {
         color: #FF6600;
         height: 16px;
         line-height: 16px; }
+      .wide_f_main .wide_f_right .wide_f_item .addCart {
+        height: 20px;
+        widows: 100%;
+        line-height: 20px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        right: -80px;
+        padding: 0 10px;
+        background: orange;
+        color: white;
+        background-color: darkred;
+        cursor: pointer; }
     .wide_f_main .wide_f_right .wide_f_item_bigger {
       width: 490px;
-      height: 238px; }
+      height: 239px;
+      float: left;
+      overflow: hidden; }
       .wide_f_main .wide_f_right .wide_f_item_bigger ul {
         width: 490px;
-        height: 238px;
-        overflow: hidden; }
+        height: 239px; }
         .wide_f_main .wide_f_right .wide_f_item_bigger ul li {
           float: left; }
 

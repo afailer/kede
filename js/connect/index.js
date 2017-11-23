@@ -1,15 +1,21 @@
 requirejs.config({
 	paths:{
-		jquery:"../../js/jquery-1.8.3",
-		move:"../basic/move/move"
+		jquery:"../jquery-1.8.3",
+		move:"../basic/move",
+		ck:"../basic/check",
+		pb:"../public"
 	}
 })
 
-requirejs(["jquery","move"],function($,move){
-	$(document).ready(function(){
-		move.init();
-	})
-	window.onscroll=function(){
-		move.showTitle(".wideTitle",".wide_f_main");
+requirejs(["jquery","move","ck"],function($,move,ck){
+	onload = function(){
+		
 	}
+//		var user=ck.getCookie("user");
+//		console.log(user);
+//		if(user!=null){
+//			ck.setLoginState(user);
+//		}
+		
+	
 })

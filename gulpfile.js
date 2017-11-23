@@ -18,7 +18,9 @@ gulp.task("concat",function(){
 gulp.task("regist",function(){
 	return gulp.src("css/regist.scss").pipe(sass()).pipe(rename("regist.css")).pipe(gulp.dest("css"));
 });
-
+gulp.task("shopcart",function(){
+	return gulp.src("css/shopCart.scss").pipe(sass()).pipe(rename("shopCart.css")).pipe(gulp.dest("css"));
+});
 gulp.task("index",function(){
 	return gulp.src(["css/index.scss","css/wide_flore.scss"]).pipe(concat("index1.cass")).pipe(sass()).pipe(rename("index.css")).pipe(gulp.dest("css"));
 });
