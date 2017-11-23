@@ -1,3 +1,9 @@
+#top {
+  width: 1190px;
+  padding: 30px 0;
+  margin: 0 auto;
+  background: red; }
+
 #plist .product {
   width: 1190px;
   margin: 0 auto; }

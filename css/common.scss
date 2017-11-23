@@ -12,7 +12,10 @@ b,strong{font-weight:100;}
 img{display:block;border:0;}
 .clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility: hidden;}
 .clearfix{zoom:1;}
-
+html,body{
+    width: 100%;
+    height: 100%;
+}
 
 @mixin common{
     width: 1190px;

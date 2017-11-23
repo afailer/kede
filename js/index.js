@@ -76,7 +76,7 @@ function addCart(){
 			$(this).find(".addCart").stop().animate({"right":-80},500);
 		}
 	})
-	$(".addCart").bind("click",function(){
+	$(".addCart").bind("click",function(e){
 		var product={
 			"img":$(this).parent().find(".wide_f_item_img")[0].src,
 			"type":"01",
@@ -86,6 +86,17 @@ function addCart(){
 		}
 		
 		addToCart(12,product);
+		console.log(e.clientX+"  "+window.offsetTop);
+		var startpoint={
+			x:e.pageX,
+			y:e.pageY
+		}
+		var endpoint={
+			x:$(".flyCart")[0].offsetLeft,
+			y:$(".flyCart")[0].offsetTop+$(document).scrollTop()
+		}
+		var v=$(this).parent().find(".wide_f_item_img")[0].cloneNode(true);
+		flyToChart(startpoint,endpoint,$(".num")[0],v);
 	})
 	
 }

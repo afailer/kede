@@ -102,3 +102,62 @@ function addToCart(id,product){
 	pList.push(product);
 	addCookie("product",JSON.stringify(pList));
 }
+var sum=0;
+function flyToChart(startPoint,endPoint,num,point){
+ 		//起点
+// 		var startPoint = {
+// 			x : goods.offsetLeft +goods.offsetWidth/2,
+// 			y : goods.offsetTop
+// 		}
+ 		//终点
+// 		var endPoint = {
+// 			x : cart.offsetLeft + cart.offsetWidth/2,
+// 			y : cart.offsetTop
+// 		}
+		//最高点
+		var topPoint=null;
+		if(startPoint.y>endPoint.y){
+			topPoint = {
+ 				x : endPoint.x - (endPoint.x-startPoint.x)/3,
+ 				y : endPoint.y - 50
+ 			}
+		}else{
+			topPoint = {
+				x : endPoint.x - (endPoint.x-startPoint.x)/3,
+ 				y : startPoint.y - 50
+ 			}
+		}
+ 		
+ 		
+ 		
+ 		//根据三点坐标确定抛物线的系数
+		var a = ((startPoint.y - endPoint.y) * (startPoint.x - topPoint.x) - (startPoint.y - topPoint.y) * (startPoint.x - endPoint.x)) / ((startPoint.x * startPoint.x - endPoint.x * endPoint.x) * (startPoint.x - topPoint.x)-(startPoint.x * startPoint.x - topPoint.x * topPoint.x) * (startPoint.x - endPoint.x));  
+				
+		var b = ((endPoint.y - startPoint.y) - a * (endPoint.x * endPoint.x - startPoint.x * startPoint.x)) / (endPoint.x - startPoint.x);  
+				
+		var c = startPoint.y - a * startPoint.x * startPoint.x - b * startPoint.x;
+ 	
+ 		//创建商品
+ 		var x = startPoint.x;//商品的初始横坐标
+ 		var y = startPoint.y;//商品的初始纵坐标
+ 		
+ 		point.style.width = point.style.height = "30px";
+ 		document.body.appendChild(point);
+ 		point.style.position = "absolute";
+ 		point.style.left = x + "px";
+ 		point.style.top = y + "px";
+ 		//商品运动  y = a*x*x + b*x + c
+ 		var timer = null;
+ 		timer = setInterval(function(){
+ 			x = x + 5 ;//改变商品的横向速度
+ 			y =  a*x*x + b*x + c; //根据抛物线方程 得到y的值
+ 			if( x < endPoint.x ){
+	 			point.style.left = x + "px";
+	 			point.style.top = y + "px";
+ 			}else{
+ 				clearInterval(timer);
+ 				point.remove();
+ 				//num.innerHTML = ++ sum;
+ 			}
+ 		},8)
+ 	}

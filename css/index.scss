@@ -225,3 +225,14 @@ html body{
     color: white;
     background: green;
 }
+.flyCart{
+    position: fixed;
+    right: 50px;
+    bottom: 300px;
+    display: block;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #CCCCCC;
+    font-size: 50px;
+    text-align: center;
+}
